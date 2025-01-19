@@ -8,6 +8,7 @@ if (!isset($_SESSION['utilisateur_id'])) {
 }
 
 // Connexion à la base de données
+//$conn = new mysqli('localhost', 'e2405714', 'Jrn114sh', 'e2405714');
 $conn = new mysqli('localhost', 'root', '', 'luxride');
 if ($conn->connect_error) {
     die('Erreur de connexion : ' . $conn->connect_error);
