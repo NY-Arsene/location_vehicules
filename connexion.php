@@ -1,8 +1,12 @@
 <?php
 session_start();
+<<<<<<< HEAD
 $_SESSION['isLoggedIn'] = true;
 //$conn = new mysqli('localhost', 'e2405714', 'Jrn114sh', 'e2405714');
 $conn = new mysqli('localhost', 'root', '', 'luxride');
+=======
+$conn = new mysqli('localhost', 'e2405714', 'Jrn114sh', 'e2405714');
+>>>>>>> 10ab2f9 ( les autres fichiers)
 if ($conn->connect_error) {
     die('Erreur de connexion : ' . $conn->connect_error);
 }
@@ -55,7 +59,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion ou Inscription - LuxRide</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="connexion.css"> 
+=======
+    <link rel="stylesheet" href="connexion.css"> <!-- Style global -->
+>>>>>>> 10ab2f9 ( les autres fichiers)
 
 </head>
 <body>
@@ -108,11 +116,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             document.getElementById(formId).classList.add('active');
             event.target.classList.add('active');
         }
+<<<<<<< HEAD
         
         // Stocker l'état de connexion dans localStorage
         localStorage.setItem("isLoggedIn", "true");
 
 
+=======
+>>>>>>> 10ab2f9 ( les autres fichiers)
     </script>
 </body>
 </html>

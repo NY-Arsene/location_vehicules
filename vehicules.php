@@ -3,6 +3,7 @@ session_start(); // Gestion des sessions
 
 // Connexion à la base de données
 $conn = new mysqli('localhost', 'e2405714', 'jrn114sh', 'e2405714');
+
 if ($conn->connect_error) {
     die('Erreur de connexion : ' . $conn->connect_error);
 }
